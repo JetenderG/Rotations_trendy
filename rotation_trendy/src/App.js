@@ -7,20 +7,20 @@ import PageFour from './Componets/Page_Four';
 import Wrapper from './Componets/Wrapper';
 import Title from './Componets/Title';
 import Cube from './Componets/Cube_Model';
+import NavBar from './Componets/Navbar';
 import './App.css';
 class App extends React.Component {
-  
+
   render(){
+
+    let pages = [<PageOne/>, <PageTwo/>, <PageThree/>, <PageFour/>];
       return (
 <div className="App">
         
 <Wrapper>
       <Title/>
       <Cube/>
-        <PageOne/>
-        <PageTwo/>
-        <PageThree/>
-        <PageFour/>
+        <NavBar pages = {pages} ></NavBar>
 
 </Wrapper>
 
